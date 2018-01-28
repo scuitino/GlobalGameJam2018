@@ -101,7 +101,7 @@ public class CGameManager : MonoBehaviour {
         _player1Score = 0;
         _player2Score = 0;
         _GO.SetActive(true);
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(5.7F);
         SetState(State.PLAYING);
     }
 

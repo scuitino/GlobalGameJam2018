@@ -62,7 +62,7 @@ public class CSlider : MonoBehaviour {
     public void AssignPlayer(Transform pHuman)
     {
         targetplayer = pHuman;
-        transform.position = targetplayer.position + new Vector3(0,0.8f,0);
+        transform.position = targetplayer.position + new Vector3(0,1f,0);
     }
 
 	void StopSlider(){

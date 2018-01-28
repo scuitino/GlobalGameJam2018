@@ -56,10 +56,13 @@ public class CNavy : MonoBehaviour {
             return;
 
         if (Input.GetButtonDown("Fire1"))
-        {            
-            _slider.gameObject.SetActive(true);
-            _slider.GetComponent<CSlider>().AssignPlayer(_targetToSelect.transform);
-            return;
+        {
+            if (_targetToSelect.GetComponent<CHuman>().GetGod() != 2)
+            {
+                _slider.gameObject.SetActive(true);
+                _slider.GetComponent<CSlider>().AssignPlayer(_targetToSelect.transform);
+                return;
+            }            
         }
         _targetToSelect = null;
 

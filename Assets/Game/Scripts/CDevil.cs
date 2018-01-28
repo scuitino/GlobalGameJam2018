@@ -58,9 +58,12 @@ public class CDevil : MonoBehaviour
 
         if (Input.GetButtonDown("Fire2"))
         {
-            _slider.gameObject.SetActive(true);
-            _slider.GetComponent<CSlider>().AssignPlayer(_targetToSelect.transform);
-            return;
+            if (_targetToSelect.GetComponent<CHuman>().GetGod() != 1)
+            {
+                _slider.gameObject.SetActive(true);
+                _slider.GetComponent<CSlider>().AssignPlayer(_targetToSelect.transform);
+                return;
+            }               
         }
         _targetToSelect = null;
 
