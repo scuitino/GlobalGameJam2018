@@ -37,6 +37,9 @@ public class CNavy : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        if (CGameManager.instance._state == CGameManager.State.PAUSED)
+            return;
+
         transform.Translate(_moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f,_moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
 
         //float moveHorizontal = Input.GetAxis("Horizontal");
@@ -49,6 +52,9 @@ public class CNavy : MonoBehaviour {
 
     private void Update()
     {
+        if (CGameManager.instance._state == CGameManager.State.PAUSED)
+            return;
+
         if (Input.GetButtonDown("Fire1"))
         {            
             _slider.gameObject.SetActive(true);

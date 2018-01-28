@@ -14,6 +14,9 @@ public class CPlayer : MonoBehaviour {
     [SerializeField]
     GameObject _slider;
 
+    [SerializeField]
+    Animator _animator;
+
     public int GetPlayerNumber()
     {
         return _playerNumber;
@@ -27,6 +30,18 @@ public class CPlayer : MonoBehaviour {
             _selectedPlayer.StartCoroutine("SphereAttack");
             //_selectedPlayer.EnableCastingParticles(_playerNumber, false);
             _selectedPlayer.PlayAttackParticles(_playerNumber);
+            if (_playerNumber == 1)
+            {
+                CGameManager.instance._attackSound.Play();
+                CGameManager.instance._violinSound.Play();
+                _animator.SetTrigger("Attack");
+            }
+            else if (_playerNumber == 2)
+            {
+                CGameManager.instance._attackSound.Play();
+                CGameManager.instance._guitarSound.Play();
+                _animator.SetTrigger("Attack");
+            } 
         }
         else
         {

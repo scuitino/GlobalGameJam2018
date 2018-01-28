@@ -38,6 +38,9 @@ public class CDevil : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (CGameManager.instance._state == CGameManager.State.PAUSED)
+            return;
+
         transform.Translate(_moveSpeed * Input.GetAxis("Horizontal2") * Time.deltaTime, 0f, _moveSpeed * Input.GetAxis("Vertical2") * Time.deltaTime);
 
         //float moveHorizontal = Input.GetAxis ("Horizontal2");
@@ -50,6 +53,9 @@ public class CDevil : MonoBehaviour
 
     private void Update()
     {
+        if (CGameManager.instance._state == CGameManager.State.PAUSED)
+            return;
+
         if (Input.GetButtonDown("Fire2"))
         {
             _slider.gameObject.SetActive(true);

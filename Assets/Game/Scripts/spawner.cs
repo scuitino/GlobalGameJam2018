@@ -46,7 +46,6 @@ public class spawner : MonoBehaviour {
 
                 }	
 			}
-            Debug.Log("spawning");
 			humans [i].transform.position = spawners[tAvailableSpawnPoint].transform.position;
 		}
 	}
