@@ -7,6 +7,9 @@ public class CMenusWin : MonoBehaviour {
 
     bool _ready;
 
+    [SerializeField]
+    AudioSource _click;
+
     public void OnEnable()
     {
         StartCoroutine(GetReady());
@@ -19,11 +22,13 @@ public class CMenusWin : MonoBehaviour {
 
         if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2"))
         {
+            _click.Play();
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
         }
         else if (Input.GetButtonDown("Fire3") || Input.GetButtonDown("Fire4"))
         {
+            _click.Play();
             SceneManager.LoadScene("Lobby");
         }
     }
