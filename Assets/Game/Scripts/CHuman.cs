@@ -28,11 +28,15 @@ public class CHuman : MonoBehaviour {
     [SerializeField]
     GameObject _badAttack;
 
+    [SerializeField]
+    GameObject _goodSprite, _badSprite, _neutralSprite, _actualSprite;
+
     #endregion
     private void Start()
     {
         _spriteRenderer = this.GetComponent<SpriteRenderer>();
         _god = 0;
+        _actualSprite = _neutralSprite;
     }
 
     // switch god
@@ -41,17 +45,23 @@ public class CHuman : MonoBehaviour {
         _god = pPlayer;
         if (_god == 1)
         {
-            _spriteRenderer.color = Color.blue;
+            _actualSprite.SetActive(false);
+            _actualSprite = _goodSprite;
+            _actualSprite.SetActive(true);
         }
         else
         {
             if (_god == 2)
             {
-                _spriteRenderer.color = Color.red;
+                _actualSprite.SetActive(false);
+                _actualSprite = _badSprite;
+                _actualSprite.SetActive(true);
             }
             else
             {
-                _spriteRenderer.color = Color.white;
+                _actualSprite.SetActive(false);
+                _actualSprite = _neutralSprite;
+                _actualSprite.SetActive(true);
             }
         }
     }
