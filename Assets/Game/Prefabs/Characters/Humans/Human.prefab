@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65667004845337742}
   - component: {fileID: 114129151270743936}
   - component: {fileID: 54952121931590614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Human
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 4842495845245038}
   - component: {fileID: 198184209311110766}
   - component: {fileID: 199604728884540210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GoodCasting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4889966306074092}
   - component: {fileID: 198933322342927688}
   - component: {fileID: 199109374807299056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3 Rays
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 4281784570138030}
   - component: {fileID: 198386496851152804}
   - component: {fileID: 199352264644686534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3 Pulse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,8 @@ GameObject:
   - component: {fileID: 4424862423045840}
   - component: {fileID: 198676358652733364}
   - component: {fileID: 199252971336595794}
-  m_Layer: 0
+  - component: {fileID: 114922956913529780}
+  m_Layer: 8
   m_Name: BadAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4289533004668480}
   - component: {fileID: 212705536877319776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +125,7 @@ GameObject:
   - component: {fileID: 4349983378045628}
   - component: {fileID: 198913285065452334}
   - component: {fileID: 199035646864421424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Stars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +142,7 @@ GameObject:
   - component: {fileID: 4261620925728146}
   - component: {fileID: 198427775684134844}
   - component: {fileID: 199175115617544774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3 Pulse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +157,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4288383687421554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttacksColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +174,7 @@ GameObject:
   - component: {fileID: 4713145896402220}
   - component: {fileID: 198998109528406510}
   - component: {fileID: 199377484785447778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Inner Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +191,7 @@ GameObject:
   - component: {fileID: 4423136587349032}
   - component: {fileID: 198646982674360664}
   - component: {fileID: 199642371421674614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EvilCasting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +206,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4457726041466420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +223,7 @@ GameObject:
   - component: {fileID: 4757164618582708}
   - component: {fileID: 198771492284190034}
   - component: {fileID: 199528034537963422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Stars Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +240,7 @@ GameObject:
   - component: {fileID: 4098320393399064}
   - component: {fileID: 198334391520630932}
   - component: {fileID: 199986803061573112}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Inner Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +257,8 @@ GameObject:
   - component: {fileID: 4181036857762304}
   - component: {fileID: 198772731972226304}
   - component: {fileID: 199830769560655112}
-  m_Layer: 0
+  - component: {fileID: 114704281424796004}
+  m_Layer: 8
   m_Name: GoodAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +275,7 @@ GameObject:
   - component: {fileID: 4689028960527078}
   - component: {fileID: 135456119491685616}
   - component: {fileID: 114642422334103728}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +292,7 @@ GameObject:
   - component: {fileID: 4473755238951168}
   - component: {fileID: 198720830037102556}
   - component: {fileID: 199006557684814558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3 Rays
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +309,7 @@ GameObject:
   - component: {fileID: 4928303864874724}
   - component: {fileID: 198002733037117354}
   - component: {fileID: 199355899213918132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Rays
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +326,7 @@ GameObject:
   - component: {fileID: 4935579490619792}
   - component: {fileID: 198711835225765008}
   - component: {fileID: 199130550726398898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Stars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +343,7 @@ GameObject:
   - component: {fileID: 4204188325984666}
   - component: {fileID: 198745212262937378}
   - component: {fileID: 199601676914053888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Rays
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +360,7 @@ GameObject:
   - component: {fileID: 4289696975409798}
   - component: {fileID: 198042848772568816}
   - component: {fileID: 199543963040690562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX4 Stars Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +496,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1079788812883808}
   m_LocalRotation: {x: -0.7071057, y: -0, z: -0, w: 0.7071079}
-  m_LocalPosition: {x: -0.078, y: -0.44, z: -0.066}
+  m_LocalPosition: {x: -0.0484, y: -0.4085, z: -0.066}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_Children:
   - {fileID: 4288383687421554}
@@ -713,6 +715,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackType: 0
+--- !u!114 &114704281424796004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670226279750492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd2e8874f60266498a388d7229a1bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnlyDeactivate: 1
+--- !u!114 &114922956913529780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1172704588547034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd2e8874f60266498a388d7229a1bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnlyDeactivate: 1
 --- !u!135 &135456119491685616
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -732,7 +758,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1876755808865452}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -3928,7 +3954,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1949139948109554}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -8067,7 +8093,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 1, g: 1, b: 1, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0.5568628}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -10473,7 +10499,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1661739318805276}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -21310,7 +21336,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 1, g: 1, b: 1, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0.5568628}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -23716,7 +23742,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1172704588547034}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -26984,7 +27010,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1880614700830734}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -33517,7 +33543,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1902499488976512}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -36713,7 +36739,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1661444003638294}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -39933,7 +39959,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1670226279750492}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -43201,7 +43227,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1376603450299236}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0
@@ -49734,7 +49760,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1505387751136720}
   serializedVersion: 5
-  lengthInSec: 1
+  lengthInSec: 0.1
   simulationSpeed: 0.8
   stopAction: 0
   looping: 0

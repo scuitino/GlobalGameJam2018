@@ -11,36 +11,60 @@ public class CPlayer : MonoBehaviour {
     [SerializeField]
     int _playerNumber;
 
-    private void Start()
+    [SerializeField]
+    GameObject _slider;
+
+    public int GetPlayerNumber()
     {
-        HumanSelect(_selectedPlayer);
+        return _playerNumber;
     }
 
-    private void Update()
+    public void Attack(bool pResult)
     {
-        if (_playerNumber == 1 & Input.GetKeyDown(KeyCode.X))
+        if (pResult)
         {
-            Debug.Log("Ataca el Angel");
-            Attack();
+            _selectedPlayer.ChangeGod(_playerNumber);
+            _selectedPlayer.StartCoroutine("SphereAttack");
+            //_selectedPlayer.EnableCastingParticles(_playerNumber, false);
+            _selectedPlayer.PlayAttackParticles(_playerNumber);
         }
-        if (_playerNumber == 2 & Input.GetKeyDown(KeyCode.C))
+        else
         {
-            Debug.Log("Ataca el Demonio");
-            Attack();
+            _selectedPlayer.ChangeGod(0);
         }
-    }
-
-    public void Attack()
-    {
-        _selectedPlayer.ChangeGod(_playerNumber);
-        _selectedPlayer.StartCoroutine("SphereAttack");
-        _selectedPlayer.EnableCastingParticles(_playerNumber, false);
-        _selectedPlayer.PlayAttackParticles(_playerNumber);
+        
     }
 
     public void HumanSelect(CHuman pTarget)
-    {        
-        _selectedPlayer = pTarget;        
-        _selectedPlayer.EnableCastingParticles(_playerNumber, true);
+    {
+        if (pTarget == null)
+        {            
+            return;
+        }
+        if (pTarget != _selectedPlayer)
+        {
+            if (pTarget.GetGod() == 0 || pTarget.GetGod() == _playerNumber)
+            {
+                if (_selectedPlayer != null)
+                {
+                    _selectedPlayer.EnableCastingParticles(_playerNumber, false);
+                    _slider.SetActive(false);
+                }
+                _selectedPlayer = pTarget;
+                if (_selectedPlayer != null)
+                {
+                    _selectedPlayer.EnableCastingParticles(_playerNumber, true);
+                }
+            }            
+        }
+    }
+
+    public void SelectOff()
+    {
+        if (_selectedPlayer != null)
+        {
+            _selectedPlayer.EnableCastingParticles(_playerNumber, false);
+            _slider.SetActive(false);
+        }        
     }
 }

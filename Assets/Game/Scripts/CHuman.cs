@@ -31,7 +31,8 @@ public class CHuman : MonoBehaviour {
     #endregion
     private void Start()
     {
-        _spriteRenderer = this.GetComponent<SpriteRenderer>(); 
+        _spriteRenderer = this.GetComponent<SpriteRenderer>();
+        _god = 0;
     }
 
     // switch god
@@ -44,8 +45,20 @@ public class CHuman : MonoBehaviour {
         }
         else
         {
-            _spriteRenderer.color = Color.red;
+            if (_god == 2)
+            {
+                _spriteRenderer.color = Color.red;
+            }
+            else
+            {
+                _spriteRenderer.color = Color.white;
+            }
         }
+    }
+
+    public int GetGod()
+    {
+        return _god;
     }
 
     // use the sphere attack
@@ -74,7 +87,10 @@ public class CHuman : MonoBehaviour {
         }
         else
         {
-            _badCasting.SetActive(pState);
+            if (pPlayer == 2)
+            {
+                _badCasting.SetActive(pState);
+            }
         }
     }
 
@@ -86,7 +102,10 @@ public class CHuman : MonoBehaviour {
         }
         else
         {
-            _badAttack.SetActive(true);
+            if (pPlayer == 2)
+            {
+                _badAttack.SetActive(true);
+            }
         }
     }
 }
