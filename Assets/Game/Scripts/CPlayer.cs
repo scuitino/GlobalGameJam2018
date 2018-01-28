@@ -18,12 +18,12 @@ public class CPlayer : MonoBehaviour {
 
     private void Update()
     {
-        if (_playerNumber == 1 & Input.GetKeyDown(KeyCode.A))
+        if (_playerNumber == 1 & Input.GetKeyDown(KeyCode.X))
         {
             Debug.Log("Ataca el Angel");
             Attack();
         }
-        if (_playerNumber == 2 & Input.GetKeyDown(KeyCode.D))
+        if (_playerNumber == 2 & Input.GetKeyDown(KeyCode.C))
         {
             Debug.Log("Ataca el Demonio");
             Attack();

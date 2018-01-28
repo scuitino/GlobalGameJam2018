@@ -35,7 +35,7 @@ Material:
     - _TexCoordScrollX: 1
     - _TexCoordScrollY: 1
     m_Colors:
-    - _BaseColor: {r: 0.15862083, g: 0, b: 1, a: 0.5019608}
+    - _BaseColor: {r: 1, g: 0, b: 0, a: 0.5019608}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!1002 &2100001
